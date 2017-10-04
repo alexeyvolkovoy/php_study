@@ -8,6 +8,8 @@
 <body>
 <?php 
 echo "Хаюшки!!!"; 
+echo "Приветусики"; 
+
 ?>
 </body>
 </html>
