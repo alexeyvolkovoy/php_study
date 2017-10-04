@@ -11,4 +11,5 @@ $credb="CREATE TABLE SITES
 			CREATED_BY_USER_ID int();
 			";
 $mydbconn->real_query($credb);
+$mydbconn->commit();
 ?>
