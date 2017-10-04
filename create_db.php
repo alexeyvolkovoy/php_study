@@ -12,4 +12,6 @@ $credb="CREATE TABLE SITES
 			";
 $mydbconn->real_query($credb);
 $mydbconn->commit();
+if ($mydbconn->error) 
+  echo "Error DB ".$mydbconn->errno; 
 ?>
