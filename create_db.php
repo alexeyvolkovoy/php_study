@@ -20,8 +20,9 @@ foreach($credb as $dbconnand) {
    $mydbconn->real_query($dbconnand);
    $mydbconn->commit();
 //   echo $mydbconn->connect_error."<br/>";
- //  if ($mydbconn->connect_error) 
- //    echo "Error DB ".$mydbconn->connect_errno); 
+   if ($mydbconn->connect_error) 
+     echo "Error DB ".$mydbconn->connect_errno);
+   else echo "SQL command run successfull<br/>";
 
 }
 
