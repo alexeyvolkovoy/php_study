@@ -17,9 +17,9 @@ $credb=array(
 );
 foreach($credb as $dbconnand) {
 	echo $dbconnand."<br/>";
-   $mydbconn->real_query($dbconnand);
-   $mydbconn->commit();
-   echo $mydbconn->connect_error."<br/>";
+//   $mydbconn->real_query($dbconnand);
+//   $mydbconn->commit();
+//   echo $mydbconn->connect_error."<br/>";
  //  if ($mydbconn->connect_error) 
  //    echo "Error DB ".$mydbconn->connect_errno); 
 
