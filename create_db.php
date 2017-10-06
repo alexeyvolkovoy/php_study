@@ -21,9 +21,11 @@ foreach($credb as $dbcommand) {
    $mydbconn->commit();
 //   echo $mydbconn->connect_error."<br/>";
    if ($mydbconn->connect_error)  {
-     echo "Error DB ".$mydbconn->connect_errno);
+     echo "Error DB ";
    }
-   else echo "SQL command run successfull<br/>";
+   else {
+     echo "SQL command run successfull<br/>";
+   }
 
 }
 
