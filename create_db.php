@@ -15,12 +15,12 @@ $credb=array(
 "DROP TABLE 'study'.'STATES'",
 "CREATE TABLE `study`.`STATES` ( `ID` INT(16) NOT NULL AUTO_INCREMENT , `STATE` VARCHAR(64) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB"
 );
-foreach($credb as $dbconnand) {
-	echo $dbconnand."<br/>";
-   $mydbconn->real_query($dbconnand);
+foreach($credb as $dbcommand) {
+	echo $dbcommand."<br/>";
+   $mydbconn->real_query($dbcommand);
    $mydbconn->commit();
 //   echo $mydbconn->connect_error."<br/>";
-   if ($mydbconn->connect_error) 
+   if ($mydbconn->connect_error)  
      echo "Error DB ".$mydbconn->connect_errno);
    else echo "SQL command run successfull<br/>";
 
