@@ -1,15 +1,12 @@
-﻿<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Документ без названия</title>
-</head>
-</html>
-<body>
-<?php 
-echo "Хаюшки!!!"; 
-echo "Приветусики"; 
+<?php
+/**
+ * Created by PhpStorm.
+ * User: alexey
+ * Date: 8/18/17
+ * Time: 5:45 PM
+ */
+echo "Hello WORDL!";
+/**
+ * phpinfo();
+ * /
 
-?>
-</body>
-</html>

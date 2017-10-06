@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function User(forename, username, password)
+    {
+        this.forename = forename
+        this.username = username
+        this.password = password
+
+        this.showUser = function()
+        {
+            document.write("Forename: " + this.forename + "<br>")
+            document.write("Username: " + this.username + "<br>")
+            document.write("Password: " + this.password + "<br>")
+        }
+    }
+
+    arrUsers = []
+    for (i=0;i<10;i++) {
+        tmpForename = "forename_"+i
+        tmpUserName = "username_"+i
+        tmpPasswd = "password_"+i
+        arrUsers[i] = new User(tmpForename,tmpUserName,tmpPasswd)
+
+    }
+    for (i=0;i<10;i++)
+    {
+        document.write(i +"<br>")
+        arrUsers[i].showUser()
+    }
+</script>
+</body>
+</html>

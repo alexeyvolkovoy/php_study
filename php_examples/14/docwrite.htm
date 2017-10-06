@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LPMJCH and document.write()</title>
+    <style>
+      body {
+        width      :600px;
+        text-align :justify;
+        margin-left:40px;
+      }
+      .mono {
+        font-family:monospace;
+        font-size  :12pt;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About The JavaScript Examples</h1>
+
+    <p>Recently I've been asked a few times why I used the <span class='mono'>document.write()</span> function to display values in many of the JavaScript examples. The questionner usually points out that <span class='mono'>document.write()</span> is regarded as unsafe because when it is called once a web page is fully loaded, it overwrites the current document. While this is correct, it doesn't apply to any of the examples in this book - let me explain.</p>
+
+    <p>When teaching programming it's necessary to have a quick and easy way to display the results of expressions. In PHP (for example) there are the <span class='mono'>echo</span> and <span class='mono'>print</span> statements, which simply send text to the browser, so that's easy. In JavaScript, though, there are these alternatives:</p>
+
+    <ul>
+      <li>Firstly you can call a function called <span class='mono'>console.log()</span>, which will output the result of any value or expression passed to it in the console of the current browser. This is a special mode with a frame or window separate to the browser window, and in which errors and other messages can be made to display. While great for experienced programmers, it is not ideal for beginners because calling up the console is different in all browsers, it works differently in all browsers, and the output is not near the web content in the browser.</li>
+      <li>Another option is to call the <span class='mono'>alert()</span> function. This displays values or expressions passed to it in a pop-up window, which requires the user to click a button to close. Clearly this can become quite iritating very quickly, and it has the downside of only displaying the current message - previous ones are erased.</li>
+      <li>It is possible to write directly into the text of an HTML element, which is a fairly elegant solution, except that every example would require such an element to be created, and some lines of JavaScript code to access it. This gets in the way of teaching the core of an example and would make all the examples look overly cumbesome, especially if output was wanted near other content, with support for multiple screen writes.</li>
+      <li>And finally there's <span class='mono'>document.write()</span>. What it does is write the value or expression given it to the current browser location, and it is completely safe to use, as long as the web page hasn't completed loading. Where the function is employed in this book, the examples have all finished running well before the page completes loading, and so they work perfectly in all instances - and no documents get overwritten by any examples.</li>
+    </ul>
+
+    <p>What's more, <span class='mono'>document.write()</span> is a single, short function call that is self-evident as to what it does, and is therefore perfect for quickly displaying a result. It keeps all the examples short and sweet, and places the output right there in the browser. As many programmers agree, <span class='mono'>document.write()</span> <i>is</i> useful for testing short code snippets, and for for displaying quick results. And, following correct practice, none of the examples in this book that continue to run after a page has fully loaded, use the <span class='mono'>document.write()</span> function - other, better methods are always taught and employed.</p>
+
+    <p>In summary, <span class='mono'>document.write()</span> is only ever used in this book as a convenience (instead of calling the <span class='mono'>console.log()</span> function) to show values or the results of expressions. It is never used to (or intended to teach how to) display web browser content.</p>
+
+    <p>I hope that clears things up, and thanks for asking :)</p>
+
+    <ul>
+      <li><a href='../index.html'>Back to the front page</a></li>
+    </ul>
+  </body>
+</html>
