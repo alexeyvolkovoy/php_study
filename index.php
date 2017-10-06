@@ -6,7 +6,7 @@
  * Time: 5:45 PM
  */
 echo "Hello WORDL!";
-/**
- * phpinfo();
- * /
+
+ phpinfo();
+
 
