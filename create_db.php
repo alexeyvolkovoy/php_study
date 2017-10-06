@@ -16,6 +16,7 @@ $credb=array(
 "CREATE TABLE `study`.`STATES` ( `ID` INT(16) NOT NULL AUTO_INCREMENT , `STATE` VARCHAR(64) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB"
 );
 foreach($credb as $dbconnand) {
+	echo $dbconnand;
    $mydbconn->real_query($dbconnand);
    $mydbconn->commit();
    if ($mydbconn->error) 
