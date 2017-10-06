@@ -4,7 +4,7 @@ $mydbconn = new MySQLi;
 $mydbconn->connect($dbserver,$dbuser,$dbpassword,$dbname);
 if ($mydbconn->connect_error) 
   echo "Error DB connect number ".$mydbconn->connect_errno; 
-else echo "Ser GUT!";
+else echo "Ser GUT!<br/>";
 $credb=array(
 "DROP TABLE 'study'.'USERS'",
 "CREATE TABLE `study`.`USERS` ( `ID` INT(16) NOT NULL AUTO_INCREMENT PRIMARY KEY, `USER_NIC` VARCHAR(64) NOT NULL , `USRE_F_NAME` VARCHAR(64) NULL , `USER_L_NAME` VARCHAR(64) NULL , `PASSWORD` VARCHAR(1024) NOT NULL , `CELL_PHONE` VARCHAR(32) NOT NULL , `E_MAIL` VARCHAR(64) NOT NULL , `VIBER` VARCHAR(32) NOT NULL) ENGINE = InnoDB",
@@ -16,11 +16,12 @@ $credb=array(
 "CREATE TABLE `study`.`STATES` ( `ID` INT(16) NOT NULL AUTO_INCREMENT , `STATE` VARCHAR(64) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB"
 );
 foreach($credb as $dbconnand) {
-	echo $dbconnand;
+	echo $dbconnand."<br/>";
    $mydbconn->real_query($dbconnand);
    $mydbconn->commit();
-   if ($mydbconn->error) 
-     echo "Error DB ".$mydbconn->errno; 
+   echo $mydbconn->connect_error."<br/>";
+   if ($mydbconn->connect_error) 
+     echo "Error DB ".$mydbconn->connect_errno); 
 
 }
 
