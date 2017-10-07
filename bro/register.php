@@ -1,9 +1,10 @@
 <?php //setupusers.php
 require_once 'login.php';
-require_once 'register_page.php';
+
 echo $_POST['in_command'];
 
 if ($_POST['in_command']=='Новий користувач') {
+    require_once 'register_page.php';
     echo $register_form;
 }
 if ($_POST['in_command']=='Зареєструватися') {
