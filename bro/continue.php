@@ -18,7 +18,8 @@ if (isset($_SESSION['username']) && ($_POST['in_command'] == 'Додати са�
     $result = $connection->query($query);
     echo "Zashibiss!!!<br />";
 }
-if (isset($_SESSION['username']) && ($_POST['in_command'] == 'Перевірити сайт'))
+
+ if (isset($_SESSION['username']) && ($_POST['in_command'] == 'Перевірити сайт'))
 {
     $username = $_SESSION['username'];
     $password = $_SESSION['password'];
@@ -36,10 +37,10 @@ if (isset($_SESSION['username']) && ($_POST['in_command'] == 'Перевірит
     $result = $connection->query($query);
     echo "<table border='1'><tr><td>ID</td><td>Ім'я сайту</td><td>Опції</td></tr>";
     while ($row = $result->fetch_assoc()) {
-        if ($row['ANSWER'] == hash('md5',file_get_contents($row['URL'], NULL, NULL, 0, 2048))
+        if ($row['ANSWER'] == hash('md5',file_get_contents($row['URL'], NULL, NULL, 0, 2048)))
             $status_color = 'green';
         else $status_color = 'red';
-        echo "<tr><td>".$row['ID']."</td><td>".$row['SITE_NAME']."</td><td style=\'background-color:".$status_color."\'>Опції</td></tr>";
+        echo "<tr><td>".$row['ID']."</td><td>".$row['SITE_NAME']."</td><td style=\'background-color: ".$status_color."\;\'>Опції</td><td>".$status_color."</td></tr>";
     }
     echo "</table>";
     echo "<br/>";

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec03591e-344a-48a7-be0d-b2731dc16806" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bro/site_add_page.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bro/site_check_page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bro/continue.php" afterPath="$PROJECT_DIR$/bro/continue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bro/register.php" afterPath="$PROJECT_DIR$/bro/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_db.php" afterPath="$PROJECT_DIR$/create_db.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +17,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bro/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="136">
               <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
@@ -58,15 +54,14 @@
       <file leaf-file-name="continue.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bro/continue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+            <state relative-caret-position="431">
+              <caret line="42" column="153" lean-forward="false" selection-start-line="42" selection-start-column="153" selection-end-line="42" selection-end-column="153" />
               <folding>
-                <marker date="1507405087325" expanded="true" signature="636:778" ph="SELECT ID,SI... SITES" />
-                <marker date="1507405087325" expanded="true" signature="1397:1461" ph="SELECT ID,SI... SITES" />
-                <marker date="1507405087325" expanded="true" signature="1882:1920" ph="..." />
-                <marker date="1507405087325" expanded="true" signature="1884:1901" ph="..." />
-                <marker date="1507405087325" expanded="true" signature="1884:1918" ph="..." />
-                <marker date="1507405087325" expanded="true" signature="2522:2575" ph="SELECT ID,SI... SITES" />
+                <marker date="1507406918337" expanded="true" signature="636:778" ph="SELECT ID,SI... SITES" />
+                <marker date="1507406918337" expanded="true" signature="1399:1463" ph="SELECT ID,SI... SITES" />
+                <marker date="1507406918337" expanded="true" signature="1887:1905" ph="..." />
+                <marker date="1507406918337" expanded="true" signature="1887:2070" ph="..." />
+                <marker date="1507406918337" expanded="true" signature="2554:2607" ph="SELECT ID,SI... SITES" />
               </folding>
             </state>
           </provider>
@@ -194,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,7 +207,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,6 +255,8 @@
       <workItem from="1506243649932" duration="8879000" />
       <workItem from="1507367415567" duration="12693000" />
       <workItem from="1507402596332" duration="1391000" />
+      <workItem from="1507405269473" duration="108000" />
+      <workItem from="1507406028244" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="567">
       <created>1507387273937</created>
@@ -272,7 +269,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60533000" />
+    <option name="totallyTimeSpent" value="61675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1200" height="822" extended-state="6" />
@@ -686,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bro/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="136">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
@@ -746,15 +743,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bro/continue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+        <state relative-caret-position="431">
+          <caret line="42" column="153" lean-forward="false" selection-start-line="42" selection-start-column="153" selection-end-line="42" selection-end-column="153" />
           <folding>
-            <marker date="1507405087325" expanded="true" signature="636:778" ph="SELECT ID,SI... SITES" />
-            <marker date="1507405087325" expanded="true" signature="1397:1461" ph="SELECT ID,SI... SITES" />
-            <marker date="1507405087325" expanded="true" signature="1882:1920" ph="..." />
-            <marker date="1507405087325" expanded="true" signature="1884:1901" ph="..." />
-            <marker date="1507405087325" expanded="true" signature="1884:1918" ph="..." />
-            <marker date="1507405087325" expanded="true" signature="2522:2575" ph="SELECT ID,SI... SITES" />
+            <marker date="1507406918337" expanded="true" signature="636:778" ph="SELECT ID,SI... SITES" />
+            <marker date="1507406918337" expanded="true" signature="1399:1463" ph="SELECT ID,SI... SITES" />
+            <marker date="1507406918337" expanded="true" signature="1887:1905" ph="..." />
+            <marker date="1507406918337" expanded="true" signature="1887:2070" ph="..." />
+            <marker date="1507406918337" expanded="true" signature="2554:2607" ph="SELECT ID,SI... SITES" />
           </folding>
         </state>
       </provider>
